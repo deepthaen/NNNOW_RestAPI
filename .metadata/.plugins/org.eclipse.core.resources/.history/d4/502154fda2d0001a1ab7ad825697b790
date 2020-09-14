@@ -1,0 +1,12 @@
+package ggg;
+
+public class A {
+
+	private int   i = 0;
+	public int j = 9;
+	int k = 5;
+	
+	public void fun() {
+		
+	}
+}

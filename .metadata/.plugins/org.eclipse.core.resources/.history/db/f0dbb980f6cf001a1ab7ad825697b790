@@ -1,0 +1,29 @@
+package a1_new_preparation;
+
+public class SortDescending {
+	public static void main(String[] args) {
+		int[] s = {2,3,51,1,4,6};
+		 int temp;
+		 int len = s.length;
+		 for (int i = 0; i<len-1; i++){
+			 for(int j = i+1; j<len; j++) {
+				 if(s[i]< s[j]) {
+					 temp = s[i];
+					 s[j] = s[i];
+					 s[i] = temp;
+				 }
+			 }
+			 System.out.println("Descending "+s[i]);
+		 }
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

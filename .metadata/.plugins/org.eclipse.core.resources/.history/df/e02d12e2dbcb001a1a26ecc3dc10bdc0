@@ -1,0 +1,12 @@
+package mavenTest.test.driverUtilies;
+
+public interface  WebControllers {
+
+	
+	void Browser();
+	void waits();
+	void getUrl();
+	void max();
+	void quite();
+	
+}

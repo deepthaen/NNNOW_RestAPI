@@ -1,0 +1,17 @@
+package mavn.Selenium.functionalTest;
+
+import org.testng.annotations.BeforeMethod;
+
+import mavn.Selenium.driverUtilies.controlers.WebControler;
+import mavn.Selenium.driverUtilies.implemention.WebImplemention;
+
+public class Execution {
+	
+	@BeforeMethod
+	public void browserLaunch() {
+		WebControler b = new WebImplemention();
+		b.browserLaunch();
+	}
+	
+
+}

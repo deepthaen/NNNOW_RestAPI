@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\DELL-E7470\Documents\workspace\shopxuiautomation"/>
+			<item value="C:\Users\DELL-E7470\Downloads\CucumberProject"/>
+			<item value="C:\Users\DELL-E7470\Documents\workspace\webandapp_automation"/>
+			<item value="C:\Users\DELL-E7470\Documents\workspace"/>
+			<item value="C:\Automation\webandapp_automation"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\DELL-E7470\eclipse-workspace\Selenium"/>
+			<item value="C:\Users\DELL-E7470\eclipse-workspace\Selenium\src\test\java\mavn\Selenium\functionalTest\Execution.java"/>
+			<item value="C:\Users\DELL-E7470\eclipse-workspace\Selenium\src\main\java\mavn\Selenium\utilies\PropertyUtil.java"/>
+			<item value="C:\Users\DELL-E7470\eclipse-workspace\Deep_Interview\Selenium.txt"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="cucmberFrame.PraticeCucumber"/>
+			<item value="com.sel_cucum.SeleniumCucumber"/>
+			<item value="webAutomation.Nnnow"/>
+			<item value="mavenTest.test"/>
+			<item value="mavn"/>
+			<item value="mavn.Selenium"/>
+		</list>
+		<list key="groupId">
+			<item value="cucmberFrame"/>
+			<item value="com.sel_cucum"/>
+			<item value="webAutomation"/>
+			<item value="mavenTest"/>
+			<item value="mavn"/>
+		</list>
+		<list key="artifactId">
+			<item value="PraticeCucumber"/>
+			<item value="SeleniumCucumber"/>
+			<item value="Nnnow"/>
+			<item value="test"/>
+			<item value="Selenium"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

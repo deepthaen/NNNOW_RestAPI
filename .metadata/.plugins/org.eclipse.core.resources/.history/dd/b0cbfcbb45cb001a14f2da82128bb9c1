@@ -1,0 +1,49 @@
+package com.altimetrik.ee.demo.restTest;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.Assert;
+
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class ServiceImplementation {
+
+	
+	
+	
+	public static Response getCall(RequestSpecification rs,String url) {
+		return rs.when().get(url);
+	}
+	
+	public static int getStatus(Response res) {
+		return res.getStatusCode();
+	}
+	public static void validateStatus_code(Response res) {
+		int rescode = getStatus(res);
+		if(rescode == 200) {
+			Assert.assertTrue(true);
+		}else {
+			Assert.fail("Status code not matching");
+		}
+	}
+	
+	public static void  validateResponseBody(Response res) throws JSONException{
+		String valuebody = res.getStatusLine().toString();
+		JSONObject jo = new JSONObject(valuebody);
+		String name = jo.get("componentName").toString();
+		String identifier = jo.get("componentIdentifier").toString();
+		
+		if(name.equalsIgnoreCase(NAME) && 
+				identifier.equalsIgnoreCase(IDENTIFIER)) {
+			System.out.println(name+"  --  "+identifier);
+		}
+		
+	}
+	
+	private static final String NAME= "demo";
+	private static final String IDENTIFIER = "df6c9b8b-d5e9-48e4-a872-6b4c4a51cba4";
+	
+	
+	
+}

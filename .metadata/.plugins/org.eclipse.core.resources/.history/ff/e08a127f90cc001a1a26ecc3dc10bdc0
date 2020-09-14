@@ -1,0 +1,51 @@
+package mavenTest.test.functional;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import mavenTest.test.BrowserUtil.BrowserLaunch;
+import mavenTest.test.driverUtilies.WebControllers;
+import mavenTest.test.implemention.Checkout;
+import mavenTest.test.implemention.Listing;
+import mavenTest.test.implemention.Login;
+import mavenTest.test.implemention.PDP;
+
+public class LoginFunctionality extends BrowserLaunch {
+	public WebDriver driver = null;
+	
+	
+	public Login Log;
+	public Listing Lis;
+	public PDP pdp;
+	public Checkout check;
+	
+	
+	public WebControllers w;
+	public BrowserLaunch BL;
+	public LoginFunctionality() {
+		Log = new Login();
+		Lis = new Listing();
+		pdp = new PDP();
+		check = new Checkout();
+		this.driver= BL.BrowserLaunch();
+		
+	}
+	
+	@BeforeMethod
+	public void BrowLaunch() {
+		w.getUrl();
+		w.max();
+		w.waits();
+	}
+
+	@Test
+	public void FunctionalLogin() {
+		Log.Login();
+	}
+	
+	@BeforeMethod
+	public void CloseBroweser() {
+	w.quite();
+}
+}

@@ -1,0 +1,5 @@
+package mavn.Selenium.utilies;
+
+public class Log4jProperties {
+
+}

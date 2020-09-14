@@ -1,0 +1,12 @@
+package mavn.Selenium.functionalTest;
+
+import org.testng.annotations.Test;
+
+public class Groups {
+	
+	@Test(groups = {"Functional"})
+	public void groupss() {
+		System.out.println("groupss");
+	}
+
+}

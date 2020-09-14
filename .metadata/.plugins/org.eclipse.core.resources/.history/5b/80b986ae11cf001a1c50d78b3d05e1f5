@@ -1,0 +1,46 @@
+package com.sel_cucum.SeleniumCucumber.webPages;
+
+import java.util.HashSet;
+
+public class Interview {
+ 
+	public static void main(String[] args) {
+		
+		
+	}
+	public static String repeat(String s) {
+			
+			String str= "management";
+		
+		Set<Char> unique = new HashSet<>();
+		Set<Character> duplicate = new HashSet<>();
+		for(char c : s.toCharArray()) {
+			if(!duplicate.contains(c)) {
+				if(!unique.add(s)) {
+					unique.remove(c);
+					duplicate.add(c);
+				}
+			}
+		}
+		System.out.println(unique);
+		
+		
+			
+		}		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	 
+		            
+		            
+		
+
+}

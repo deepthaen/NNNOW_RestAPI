@@ -1,0 +1,33 @@
+package com.sele;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class ExcutionNNNow extends CommonNNNow {
+	
+	FunctionalNNNow fn;
+	public ExcutionNNNow() {
+		driver = getInstance();
+		fn = new FunctionalNNNow(driver);
+	}
+	
+	@Test
+	public void orderPlace() {
+		maximize();
+		getUrl();
+		waitel();
+		fn.login();
+		fn.hoverCategory();
+		fn.subCategory();
+		fn.listpage();
+		fn.pdp();
+		fn.continuePDP();
+		fn.navgCheckout();
+		
+		
+		
+	}
+	
+
+}

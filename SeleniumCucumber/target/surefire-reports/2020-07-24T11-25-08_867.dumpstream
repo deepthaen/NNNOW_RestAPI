@@ -1,0 +1,51 @@
+# Created at 2020-07-24T11:25:08.873
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+
+# Created at 2020-07-24T11:25:08.877
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2020-07-24T11:25:08.878
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created at 2020-07-24T11:25:08.879
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2020-07-24T11:25:08.880
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+
+# Created at 2020-07-24T11:25:08.885
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+
+# Created at 2020-07-24T11:25:08.886
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+# Created at 2020-07-24T11:25:08.888
+Caused by: java.lang.RuntimeException: Class java/lang/UnknownError could not be instrumented.
+
+# Created at 2020-07-24T11:25:08.889
+	at org.jacoco.agent.rt.internal_290345e.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:139)
+
+# Created at 2020-07-24T11:25:08.890
+	at org.jacoco.agent.rt.internal_290345e.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:100)
+
+# Created at 2020-07-24T11:25:08.890
+	at org.jacoco.agent.rt.internal_290345e.PreMain.createRuntime(PreMain.java:55)
+
+# Created at 2020-07-24T11:25:08.891
+	at org.jacoco.agent.rt.internal_290345e.PreMain.premain(PreMain.java:47)
+
+# Created at 2020-07-24T11:25:08.892
+	... 6 more
+
+# Created at 2020-07-24T11:25:08.893
+Caused by: java.lang.NoSuchFieldException: $jacocoAccess
+
+# Created at 2020-07-24T11:25:08.894
+	at java.base/java.lang.Class.getField(Class.java:2004)
+
+# Created at 2020-07-24T11:25:08.895
+	at org.jacoco.agent.rt.internal_290345e.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:137)
+
+# Created at 2020-07-24T11:25:08.897
+	... 9 more
+

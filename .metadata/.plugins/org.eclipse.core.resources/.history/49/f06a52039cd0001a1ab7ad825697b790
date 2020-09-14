@@ -1,0 +1,57 @@
+
+public class Test {
+	// premitive types
+	int i = 0;
+	double j = 9d;
+	float k = 4f;
+	long l = 1l;
+
+	// class type
+	static Integer a = 2;
+	Integer b = new Integer(9);
+
+	// Java supports Auto casting primitive class to class type and vise versa
+
+	
+	// static methods can access only static variable of the class
+	// NON static methods can access both static and non satic variables of the class
+
+
+	public static void main(String[] args) {
+		int g = 2;
+		double f = 3.4;
+		int j = (int)f;
+		double e = (int)g;
+		// int u = (double)f; not possible
+		
+		Integer t = 0;
+		t =  g;
+		String s = "deeptha";
+         name(s);
+         
+         String o = "deeptha";
+         //stringlen(o);
+         System.out.println(stringlen(o,4));
+	}
+
+	public void fun() {
+		int g = i + 2;
+
+	}
+
+	public static void name(String d) {
+		System.out.println(d);
+		
+	}
+	public static int stringlen(String t,int i) {
+		int len = t.length();
+		return len;
+		
+	}
+	pu
+}
+
+// class 
+// prodperties veribles and methods can only be accessed using its object
+
+// all the static property can be accesable from calss name

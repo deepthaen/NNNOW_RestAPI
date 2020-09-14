@@ -1,0 +1,8 @@
+package ggg;
+
+public class A {
+
+	public void fun() {
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginClass.java&apos; to &apos;SeleniumCucumber/src/main/java/com.sel_cucum.SeleniumCucumber.webPages&apos;&#x0D;&#x0A;- Original project: &apos;Selenium&apos;&#x0D;&#x0A;- Destination element: &apos;SeleniumCucumber/src/main/java/com.sel_cucum.SeleniumCucumber.webPages&apos;&#x0D;&#x0A;- Original element: &apos;mavn.Selenium.driverUtilies.implemention.LoginClass.java&apos;" description="Copy compilation unit" destination="=SeleniumCucumber/src\/main\/java&lt;com.sel_cucum.SeleniumCucumber.webPages" element1="/src\/main\/java&lt;mavn.Selenium.driverUtilies.implemention{LoginClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1595500939420" units="1" version="1.0"/>
+</session>

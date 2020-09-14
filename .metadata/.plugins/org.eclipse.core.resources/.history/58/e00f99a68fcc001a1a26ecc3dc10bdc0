@@ -1,0 +1,29 @@
+package mavenTest.test.functional;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+import mavenTest.test.BrowserUtil.BrowserLaunch;
+import mavenTest.test.driverUtilies.WebControllers;
+import mavenTest.test.implemention.Login;
+
+public class LoginFunctionality extends BrowserLaunch {
+	public WebDriver driver = null;
+	
+	
+	public Login Log;
+	public BrowserLaunch BL;
+	public LoginFunctionality() {
+		Log = new Login();
+		this.driver= BL.BrowserLaunch();
+		
+	}
+	
+	@BeforeMethod
+	public void BrowLaunch() {
+		
+		
+		
+	}
+
+}

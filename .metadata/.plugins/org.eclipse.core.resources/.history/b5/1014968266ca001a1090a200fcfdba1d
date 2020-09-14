@@ -1,0 +1,23 @@
+package com.sele;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class FunctionalNNNow{
+	
+	WebDriver driver;
+	CommonNNNow launch;
+	public void m() {
+		 launch = new CommonNNNow();
+		 driver = launch.getInstance();
+	}
+	
+	public void login() {
+	driver.findElement(By.xpath("//span[@class='nw-loginbutton-text']")).click();
+	driver.findElement(By.xpath("//input[@placeholder='Email / Phone Number']")).sendKeys("deepthaen@gmail.com");
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys("nnnow123");
+	driver.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+	
+	
+}

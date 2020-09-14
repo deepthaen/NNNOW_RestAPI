@@ -1,0 +1,14 @@
+package com.sele;
+
+import org.openqa.selenium.By;
+
+public class FunctionalNNNow extends CommonNNNow{
+	
+	
+	
+	driver.findElement(By.xpath("//span[@class='nw-loginbutton-text']")).click();
+	driver.findElement(By.xpath("//input[@placeholder='Email / Phone Number']")).sendKeys("deepthaen@gmail.com");
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys("nnnow123");
+	driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+}

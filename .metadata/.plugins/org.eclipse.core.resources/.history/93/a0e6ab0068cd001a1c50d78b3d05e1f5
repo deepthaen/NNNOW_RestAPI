@@ -1,0 +1,23 @@
+package cucmberFrame.PraticeCucumber.stepDefination;
+
+import org.openqa.selenium.WebDriver;
+
+import cucmberFrame.PraticeCucumber.implemention.WebImplemention;
+import cucmberFrame.PraticeCucumber.webPage.Login;
+
+public class LoginStepDefination {
+	
+	public WebDriver driver;
+	
+	WebImplemention webimp = new WebImplemention();
+	Login log ;
+	
+	public LoginStepDefination() {
+		
+		this.driver = webimp.launchBrowser();
+		log = new Login(driver);
+		
+	}
+	
+
+}

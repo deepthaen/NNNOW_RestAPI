@@ -1,0 +1,30 @@
+package mavn.Selenium.functionalTest;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import mavn.Selenium.driverUtilies.controlers.WebControler;
+import mavn.Selenium.driverUtilies.implemention.WebImplemention;
+
+public class Execution {
+	
+	public WebDriver driver;
+	
+	public Execution() {
+		WebControler b = new WebImplemention();
+	}
+	
+	@BeforeMethod
+	public void browserLaunch() {
+		
+		this.driver = b.browserLaunch();
+		b.max();
+	}
+	@Test
+	public void Login() {
+		
+	}
+	
+
+}

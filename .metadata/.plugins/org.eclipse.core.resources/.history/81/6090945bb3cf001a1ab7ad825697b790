@@ -1,0 +1,16 @@
+package a1_new_preparation;
+
+public class ReverseString {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public static void reverse(String str) {
+		
+	}
+	
+	
+
+}

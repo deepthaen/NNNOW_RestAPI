@@ -1,0 +1,16 @@
+package mavenTest.test.driverUtilies;
+
+public interface  WebControllers {
+
+	
+	
+	void waits();
+	void getUrl();
+	void max();
+	void mouseHover();
+	void scrollBottom();
+	void scrollUp();
+	void TakeScreenshot();
+	void quite();
+	
+}

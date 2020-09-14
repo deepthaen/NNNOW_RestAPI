@@ -1,0 +1,40 @@
+package mavn.Selenium.driverUtilies.implemention;
+
+import org.openqa.selenium.WebDriver;
+
+import mavn.Selenium.driverUtilies.BrowserUtil;
+import mavn.Selenium.driverUtilies.controlers.WebControler;
+import mavn.Selenium.utilies.PropertyUtil;
+
+public class WebImplemention implements WebControler{
+
+	public WebDriver driver;
+	public void browserLaunch() {
+    this.driver = BrowserUtil.getInstance();
+    System.out.println("Launching Browser");
+    }
+
+	public void max() {
+		driver.manage().window().maximize();
+		System.out.println("Maximizing Browser");
+	}
+
+	public void Url() {
+	PropertyUtil.getProperty("Url");
+	System.out.println("Feteching URL");
+		
+	}
+
+	public void waits() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void quite() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

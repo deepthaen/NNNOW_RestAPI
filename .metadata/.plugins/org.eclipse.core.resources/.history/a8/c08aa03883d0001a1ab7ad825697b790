@@ -1,0 +1,28 @@
+package a1_new_preparation;
+
+public class SumOfArray {
+	public static void main(String[] args) {
+		
+	}
+
+
+
+public static void sumofArray(int sum) {
+	
+	int amt = splitInt_sum(sum);
+	
+}
+
+
+public static int splitInt_sum(int sum) {
+	int digit=0;
+	int finalcount=0;
+	while(sum>0) {//1234
+		digit = sum%10; //4 -- 3 --2 --1
+		finalcount= finalcount+digit;
+		sum = sum/10; //123 --12 --1 -0
+	}
+	return finalcount;
+}
+
+}

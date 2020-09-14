@@ -1,0 +1,16 @@
+package a1_new_preparation;
+
+public class FindIntOrString {
+	
+	public static void main(String[] args) {
+				
+		String str = "6422ss6780";
+		
+		}
+		
+		
+	public static void convert() {
+		
+	}
+
+}

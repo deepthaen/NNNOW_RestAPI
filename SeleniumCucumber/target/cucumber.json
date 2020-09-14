@@ -1,0 +1,134 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "To Place End to end Order flow FF",
+        "description": "",
+        "id": "place-store-front-ui-order;to-place-end-to-end-order-flow-ff;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25801146829,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch store front UI application",
+            "match": {
+              "location": "EndtoEndFlow.launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141670804618,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type\u003d\u0027password\u0027] (tried for 50 second(s) with 500 MILLISECONDS interval)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027LM0000794\u0027, ip: \u00272401:4900:16ba:e9ae:b5ac:1fc1:3416:57c7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003d/var/folders/vl/zdhc_kh944qgkxw3h6yzx7fnfgxp1j/T/.com.google.Chrome.HUW8G8}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dMAC, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:61432}, acceptInsecureCerts\u003dfalse, browserVersion\u003d84.0.4147.89, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 660bac8738b046b822c2f46e543ffc29\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat webdriverConfig.webdriverHelper.PageElement.waitforElementClickable(PageElement.java:118)\n\tat pages.newVms.sf.LoginPage.enterPwd(LoginPage.java:47)\n\tat pages.newVms.sf.LoginPage.logintoApplication(LoginPage.java:72)\n\tat stepDefinition.sf.EndtoEndFlow.login_to_application(EndtoEndFlow.java:84)\n\tat ✽.When Login to store front application \"9740294377\" and \"1234\"(Sf_PlaceOrder.feature:7)\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Login to store front application \"9740294377\" and \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9740294377",
+                  "offset": 34
+                },
+                {
+                  "val": "1234",
+                  "offset": 51
+                }
+              ],
+              "location": "EndtoEndFlow.login_to_application(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Adding product to cart \"070def3b-1800-4e38-a420-f319cad3a20c\" and \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "070def3b-1800-4e38-a420-f319cad3a20c",
+                  "offset": 24
+                },
+                {
+                  "val": "2",
+                  "offset": 67
+                }
+              ],
+              "location": "EndtoEndFlow.add_to_cart(String,int)"
+            },
+            "matchedColumns": [
+              1,
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User navigating to cart page",
+            "match": {
+              "location": "EndtoEndFlow.go_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User confirming store front UI order",
+            "match": {
+              "location": "EndtoEndFlow.place_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User paying advance order amount \"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 34
+                }
+              ],
+              "location": "EndtoEndFlow.pay_bill(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Place Store front UI order",
+    "description": "",
+    "id": "place-store-front-ui-order",
+    "keyword": "Feature",
+    "uri": "Sf_PlaceOrder.feature"
+  }
+]

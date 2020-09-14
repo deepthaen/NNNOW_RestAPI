@@ -1,0 +1,13 @@
+package mavn.Selenium.driverUtilies.controlers;
+
+public interface WebControler {
+	
+	public void browserLaunch();
+	public void max();
+	public void Url();
+	public void waits();
+	void quite();
+	
+	
+
+}

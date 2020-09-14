@@ -1,0 +1,81 @@
+package mavenTest.test.implemention;
+
+import java.io.File;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+
+
+import mavenTest.test.Utilies.PropertyUtil;
+import mavenTest.test.driverUtilies.WebControllers;
+
+public class WebImplemention implements WebControllers{
+	
+	public  WebDriver driver;
+
+	public WebImplemention(WebDriver driver) {
+		this.driver =driver;
+	}
+	
+
+	public void waits() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("Waiting");
+			}
+
+	public void getUrl() {
+		String url = PropertyUtil.getProperty("Url");
+		driver.get(url);
+        System.out.println("Feteching Url " + url);		
+	}
+
+	public void max() {
+		driver.manage().window().maximize();
+		System.out.println("Maximizing Browser");
+		
+	}
+
+	public void quite() {
+		driver.quit();
+		System.out.println("quiting ");
+		
+	}
+
+	public void mouseHover(WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
+		
+		
+	}
+
+	public void scrollBottom(WebElement element) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,350)",element);
+		
+		
+	}
+
+	public void scrollUp(WebElement element) {
+		
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,-350)", "");
+		
+	}
+
+	public void TakeScreenshot() {
+		
+		TakesScreenshot scrShot =((TakesScreenshot) driver);
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+		
+	}
+
+
+
+}

@@ -1,0 +1,71 @@
+package mavenTest.test.implemention;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+
+import mavenTest.test.Utilies.PropertyUtil;
+import mavenTest.test.driverUtilies.WebControllers;
+
+public class WebImplemention implements WebControllers{
+	
+	public  WebDriver driver;
+
+	
+
+	public void waits() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("Waiting");
+			}
+
+	public void getUrl() {
+		String url = PropertyUtil.getProperty("Url");
+		driver.get(url);
+        System.out.println("Feteching Url " + url);		
+	}
+
+	public void max() {
+		driver.manage().window().maximize();
+		System.out.println("Maximizing Browser");
+		
+	}
+
+	public void quite() {
+		driver.quit();
+		System.out.println("quiting ");
+		
+	}
+
+	public void mouseHover() {
+		Actions action = new Actions(driver);
+		action.moveToElement(null).build().perform();
+		
+		
+	}
+
+	public void scrollBottom() {
+		
+		JavaScriptExecutor jse = (JavaScriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,350)", "");
+		
+		
+	}
+
+	public void scrollUp() {
+		
+		JavaScriptExecutor jse = (JavaScriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,-350)", "");
+		
+	}
+
+	public void TakeScreenshot() {
+		
+		TakeScreenshot TkScrnSht = (TakeScreenshot(WebDriver));
+		File ImagSave = TkScrnSht()
+		
+	}
+
+}

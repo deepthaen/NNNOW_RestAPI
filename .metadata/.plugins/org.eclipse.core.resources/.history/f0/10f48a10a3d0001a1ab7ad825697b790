@@ -1,0 +1,13 @@
+package kkk;
+
+import ggg.A;
+
+public class B {
+	
+	public void fun() {
+		A a = new A();
+		
+	int f = 	a.j;
+	}
+
+}

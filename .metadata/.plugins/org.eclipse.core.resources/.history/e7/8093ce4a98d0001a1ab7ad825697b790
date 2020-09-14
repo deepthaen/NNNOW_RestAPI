@@ -1,0 +1,14 @@
+package a1_new_preparation;
+
+public class SwapWithThirdVariable {
+	public static void main(String[] args) {
+		int a = 10, b = 20;
+		int temp;
+		
+		temp = a;
+		a=b;
+		b = temp;
+		System.out.println(a + " "+b);
+	}
+
+}

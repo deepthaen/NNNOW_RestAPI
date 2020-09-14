@@ -1,0 +1,20 @@
+package stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import com.sel_cucum.SeleniumCucumber.webUtils.implementation.WebImplementations;
+
+import cucumber.api.java.en.Given;
+
+public class Steps {
+	
+	public WebDriver driver;
+	
+	WebImplementations web;
+	@Given("^user Launches Browser$")
+	public void launchBrwser() throws Throwable{
+		web = new WebImplementations();
+		this.driver = web.launchBrowser();
+	}
+
+}

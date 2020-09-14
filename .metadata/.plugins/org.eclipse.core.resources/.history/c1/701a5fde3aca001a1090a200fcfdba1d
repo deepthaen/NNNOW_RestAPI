@@ -1,0 +1,21 @@
+package com.sele;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+public class D_SampleRun {
+	WebDriver driver; // declaring null driver
+	WebWrappers methods; // crreating nbew Wrapper interface insttance in constructoir
+	
+	public D_SampleRun() {
+		methods = new WebImplementation();
+	}
+	
+	
+	@BeforeMethod
+	public void bm() {
+		methods.launchBrowser();
+		
+	}
+
+}

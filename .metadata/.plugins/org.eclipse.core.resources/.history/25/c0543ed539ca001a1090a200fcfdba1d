@@ -1,0 +1,75 @@
+package com.sele;
+
+import org.openqa.selenium.WebDriver;
+
+public class WebImplementation implements WebWrappers {
+
+	WebDriver driver;
+	@Override
+	public void launchBrowser(String browser) {
+		A_LaunchBrowser launch = new A_LaunchBrowser();
+		driver = launch.getInstance();
+	}
+	@Override
+	public void getUrl(String url) {
+		driver.get(url);
+		
+	}
+
+	@Override
+	public void closeBrowser() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void quitBroswer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void maximiseBroser() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void typeText(String text) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void clearText() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void implicitWait(long time) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void waitForEleemnt(long time) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void waitfroClickable(long time) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sleepfor(long time) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

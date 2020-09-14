@@ -1,0 +1,18 @@
+package com.sele;
+
+public interface WebWrappers {
+	
+	
+	void launchBrowser(String url);
+	void closeBrowser();
+	void quitBroswer();
+	void maximiseBroser() ;
+	void typeText(String text);
+	void clearText();
+	void implicitWait(long time);
+	void waitForEleemnt(long time);
+	void waitfroClickable(long time);
+	void sleepfor(long time);
+	
+
+}

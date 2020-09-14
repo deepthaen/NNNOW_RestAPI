@@ -1,0 +1,23 @@
+package a1_new_preparation;
+
+public class SumOfArray {
+	public static void main(String[] args) {
+		int[] arr = {2,4,6,7};
+		sumofArray(arr);
+	}
+
+
+
+public static void sumofArray(int[] a) {
+	int sum=0;
+	for(int i = 0; i<= a.length-1; i++) {
+		sum =sum + a[i];
+		
+		System.out.println(sum);
+		
+	}
+	
+	
+}
+
+}

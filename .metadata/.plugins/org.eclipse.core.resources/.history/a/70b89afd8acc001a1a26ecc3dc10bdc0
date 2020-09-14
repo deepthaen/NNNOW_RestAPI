@@ -1,0 +1,21 @@
+package mavenTest.test.functional;
+
+import org.openqa.selenium.WebDriver;
+
+import mavenTest.test.BrowserUtil.BrowserLaunch;
+import mavenTest.test.implemention.Login;
+
+public class LoginFunctionality extends BrowserLaunch {
+	public WebDriver driver = null;
+	
+	public Login Log;
+	
+	public LoginFunctionality() {
+		
+		this.driver=driver;
+		Log = new Login();
+	}
+	
+	@
+
+}

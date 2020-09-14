@@ -1,0 +1,27 @@
+package com.altimetrik.ee.demo.restTest;
+
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class ServiceImplementation {
+
+	
+	
+	
+	public static Response getCall(RequestSpecification rs,String url) {
+		return rs.when().get(url);
+	}
+	
+	public static void getStatus() {
+		
+	}
+	public static void validateStatus_code() {
+		
+	}
+	
+	public static void validateResponseBody(){
+		
+	}
+	
+	
+}

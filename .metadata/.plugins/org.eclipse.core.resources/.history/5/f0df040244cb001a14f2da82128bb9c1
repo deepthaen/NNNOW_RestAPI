@@ -1,0 +1,12 @@
+package com.altimetrik.ee.demo.restTest;
+
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class ServiceImplementation {
+
+	public static RequestSpecification rs = null;
+
+	public static Response response = null;
+	
+}

@@ -1,0 +1,32 @@
+package mavenTest.test.implemention;
+
+import mavenTest.test.utilies.WebControllers;
+
+public class WebImplemention implements WebControllers{
+
+	public void Browser() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void waits() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void getUrl() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void max() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void quite() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

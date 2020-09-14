@@ -1,0 +1,36 @@
+package a1_new_preparation;
+
+public class ReverseString {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public static void reverse(String str) { //deeptha -- ahtpeeD
+		
+		int len = str.length(); //7
+		String res ="";
+		int i;
+		System.out.println("Actual String --> "+str);
+		for(i=len-1;i>=0;i--) {
+			char c = str.charAt(i); // a
+			String s = String.valueOf(c);
+			res = res+s;
+		}
+		System.out.println("Reverse String  -->"+res);
+	}
+	
+	/**
+	 * 
+	 * We need String --- Deeptha  -- o/p -- ahtpeeD
+	 * String ref = "";
+	 * Length of String
+	 * int i= len-1 --> i--
+	 * 	s=  str.charat(i);
+	 * Base case is i>=0
+	 * ref = ref+s(i);
+	 */
+	
+
+}

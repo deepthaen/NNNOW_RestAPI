@@ -1,0 +1,24 @@
+package com.sele;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class B_SampleBefore {
+	
+	A_LaunchBrowser launch;
+	@BeforeMethod
+	public void m() {
+		 launch = new A_LaunchBrowser();
+		
+		
+	}
+	
+	@Test
+	public void test() {
+		launch.getInstance().get("http://www.google.com");
+		Loginpage l= new Loginpage();
+		l.clickonUserName();
+	}
+
+}

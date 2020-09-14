@@ -1,0 +1,45 @@
+package a1_new_preparation;
+
+import java.util.HashMap;
+
+public class DuplicateCharacter_In_String {
+	
+	public static void main(String[] args) {
+		duplicate("aaadbfaaaabb");
+	}
+	
+	
+	public static void duplicate(String str) { // Using Hash Map
+		int len = str.length();
+		HashMap<Character, Integer> map = new HashMap<>();
+		for (int i = 0; i < len; i++) {
+			char c = str.charAt(i);
+			map.put(c,1);
+		}
+		System.out.println(map);
+	}
+	
+	/**
+	 * we need String -- aabdccf -- o/p -- ac
+	 * length of String
+	 * 
+	 * 
+	 */
+	
+	/**
+	 * aaabadccf
+	 * 012345678
+	 * 
+	 * if(0==1){ print =a
+	 * if(0==2){ print a
+	 * if(0==3){print a
+	 * if(0=4){ dont print
+	 * if(0==5){print a
+	 * 
+	 * 
+	 * if(3==4){
+	 */
+
+	
+	
+}

@@ -1,0 +1,13 @@
+package mavn.Selenium.functionalTest;
+
+import org.testng.annotations.BeforeMethod;
+
+public class Execution {
+	
+	@BeforeMethod
+	public void browserLaunch() {
+		
+	}
+	
+
+}

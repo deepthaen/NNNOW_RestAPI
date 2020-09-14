@@ -1,0 +1,17 @@
+package stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import com.sel_cucum.SeleniumCucumber.webPages.LoginClass;
+import com.sel_cucum.SeleniumCucumber.webUtils.implementation.WebImplementations;
+
+public class ListignSteps {
+	public WebDriver driver;
+	WebImplementations web;
+	LoginClass  login;
+	public ListignSteps() {
+		web = new WebImplementations();
+		this.driver = web.launchBrowser();
+		login = new LoginClass(driver);
+	}
+}

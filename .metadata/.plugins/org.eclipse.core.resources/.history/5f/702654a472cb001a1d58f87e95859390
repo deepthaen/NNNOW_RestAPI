@@ -1,0 +1,45 @@
+package mavn.Selenium.functionalTest;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import mavn.Selenium.driverUtilies.controlers.WebControler;
+import mavn.Selenium.driverUtilies.implemention.LoginClass;
+import mavn.Selenium.driverUtilies.implemention.WebImplemention;
+
+public class Execution {
+	
+	public WebDriver driver = null;;
+	
+	public WebControler b;
+	public LoginClass L;
+	
+	public Execution() {
+		 b = new WebImplemention();
+		
+	}
+	
+	@BeforeMethod
+	public void browserLaunch() {
+		
+		this.driver = b.browserLaunch();
+		b.max();
+		b.waits();
+	}
+	@Test
+	public void Login() {
+		b.Url();
+		 L = new LoginClass(driver);
+		 L.Login();
+		
+	}
+	
+	@AfterMethod
+	public void closeWindow() {
+		b.quite();
+	}
+	
+
+}

@@ -1,0 +1,23 @@
+package com.altimetrik.ee.demo.restTest;
+
+import org.json.JSONException;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class ServiceTest {
+	
+	protected static RequestSpecification rs = null;
+
+	protected static Response response = null;
+	
+	@Test
+	public void serviceTestCase() throws JSONException {
+		
+		 response = ServiceImplementation.getCall(rs, "http://3.236.131.208:33367/service/");
+		 ServiceImplementation.validateStatus_code(response);
+		 ServiceImplementation.validateResponseBody(response);
+	}
+
+}

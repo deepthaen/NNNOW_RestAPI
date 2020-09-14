@@ -1,0 +1,22 @@
+package com.sel_cucum.SeleniumCucumber.webUtils;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserUtils {
+	
+	public static WebDriver driver; 
+	
+	public BrowserUtils() {
+		this.driver = getInstance();
+	}
+	
+	public static WebDriver getInstance() {
+		if(null == driver) {
+			driver = new ChromeDriver();
+		}
+		
+		return driver;
+	}
+
+}

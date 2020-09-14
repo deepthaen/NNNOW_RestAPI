@@ -1,0 +1,45 @@
+package webAutomation.Nnnow.Implemention;
+
+import webAutomation.Nnnow.Controllers.WebControllers;
+
+public class WebImplemention implements WebControllers{
+	
+
+
+	
+	public void GetUrl() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Max() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Min() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void quite() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void TakeScreenShots() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Waits() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void MouseHover() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

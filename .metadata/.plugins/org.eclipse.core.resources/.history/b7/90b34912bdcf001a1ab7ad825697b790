@@ -1,0 +1,84 @@
+package a1_new_preparation;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class DuplicateCharacter_In_String {
+	
+	public static void main(String[] args) {
+		//duplicate("aaadbfaaaabb");
+		duplicateWord("Deeptha and dummy is a big dubakur and very big");
+		
+	}
+	
+	
+	public static void duplicate(String str) { // Using Hash Map
+		int len = str.length();
+		HashMap<Character, Integer> map = new HashMap<>(); // empty object
+		for (int i = 0; i < len; i++) { //i=0,key=a -- i=1,key=a
+			char key = str.charAt(i);//val=a -- val =a
+			
+			if(map.containsKey(key)) { // key =a
+				int value = map.get(key);
+				map.put(key, value+1);
+			}else {
+				map.put(key,1); //a=1
+			}
+		}
+		System.out.println(map);
+		
+		Set<Character> set = map.keySet();
+		for(Character key: set) {
+			if(map.get(key)==1) {
+				System.out.println(key +" --> "+map.get(key));
+			}
+		}
+	}
+	
+	public static void duplicateWord(String str) { // Using Hash Map
+		int len = str.length();
+		HashMap<String, Integer> map = new HashMap<>(); // empty object
+		String[] sa = str.split(" ");
+		for (int i = 0; i < len; i++) { //i=0,key=a -- i=1,key=a
+			//char key = str.charAt(i);//val=a -- val =a
+			String key = sa[i];
+			if(map.containsKey(key)) { // key =a
+				int value = map.get(key);
+				map.put(key, value+1);
+			}else {
+				map.put(key,1); //a=1
+			}
+		}
+		System.out.println(map);
+		
+		Set<String> set = map.keySet();
+		for(String key: set) {
+			if(map.get(key)==1) {
+				System.out.println(key +" --> "+map.get(key));
+			}
+		}
+	}
+	/**
+	 * we need String -- aabdccf -- o/p -- ac
+	 * length of String
+	 * 
+	 * 
+	 */
+	
+	/**
+	 * aaabadccf
+	 * 012345678
+	 * 
+	 * if(0==1){ print =a
+	 * if(0==2){ print a
+	 * if(0==3){print a
+	 * if(0=4){ dont print
+	 * if(0==5){print a
+	 * 
+	 * 
+	 * if(3==4){
+	 */
+
+	
+	
+}

@@ -1,0 +1,17 @@
+package mavn.Selenium.functionalTest;
+
+import org.testng.annotations.Test;
+
+public class DependsOn {
+	@Test
+	public void login() {
+		System.out.println("test1");
+	
+	}
+	
+	@Test()
+	private void placeorder() {
+		System.out.println("test2");
+	}
+
+}

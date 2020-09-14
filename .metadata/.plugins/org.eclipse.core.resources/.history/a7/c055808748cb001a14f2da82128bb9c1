@@ -1,0 +1,13 @@
+Maven Dependencies ::
+	-- Rest Assured
+	-- testng
+	-- Json parser
+	
+Test Case ::
+	Handeled /service/ -- using get apic all
+	
+Validation ::
+ 	Validated Statuc code -- 200
+ 	Validated response -- Name and identifier
+
+Created TestnG.xml for execution

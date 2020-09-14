@@ -1,0 +1,40 @@
+Selenium webdriver
+webdriver
+
+get -naviagte  -- get(url), getText, getTitle(),getAttrubute(), getwindowshandle() getWindowsHandles(), 
+getCurrentUrl - wait untill page load===  Navigate to - navigate.forword(),navigate.back(),navigate.refresh()- 
+it will not wait untill complete page load
+ 
+max,minimize - driver.manage().window().maximize()
+minize - driver.manae().window().setposition(new, point(300, 200))
+
+
+find element,elements   - findelement used to find unique element, findelements (driver.findelement(by.xpath))
+findelemets - used with list of element - if no matching found with elemnt gives empty response
+(list<webElement> lstt = new driver.findElements(By.xpath))
+
+
+Locators -- Id,Classname,Xpath,name,Linktext,Tagname, partial link text,css
+
+Sleep methods -- wait,thread.sleep,implicit,explicit,fluent
+
+thread sleep - normal wait stament 
+Actions
+select-- different methods in select
+handling java script -- wr u used
+scrrolling
+alerts
+frames
+switching windows
+screenshots
+
+log4j
+testng
+extent repots
+file reading
+config 
+
+
+
+
+framework

@@ -1,0 +1,14 @@
+package a1_new_preparation;
+
+import java.util.Arrays;
+
+public class SortArr {
+	
+	int[] arr = { 24, 6,55,22, 5,0 };
+	Arrays.sort(arr);
+	
+	System.out.println();
+	
+
+	
+}
